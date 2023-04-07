@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="542.0" prefWidth="493.0" spacing="20.0" style="-fx-background-color: #89763f;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.samplecalculator.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" />
+   <GridPane maxHeight="508.0" maxWidth="454.0" prefHeight="508.0" prefWidth="454.0" style="-fx-background-color: #7689ff;" styleClass="l">
+     <columnConstraints>
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="90.39996337890625" minWidth="10.0" prefWidth="61.39996337890625" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.79998779296875" minWidth="10.0" prefWidth="70.20003662109374" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.00003662109374" minWidth="4.60003662109375" prefWidth="71.79997100830076" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.79996337890623" minWidth="10.0" prefWidth="73.99996337890622" />
+       <ColumnConstraints hgrow="SOMETIMES" maxWidth="59.20001220703125" minWidth="10.0" prefWidth="20.400048828125023" />
+       <ColumnConstraints hgrow="SOMETIMES" maxWidth="87.0" minWidth="10.0" prefWidth="69.99995117187501" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="88.60003662109375" minWidth="10.0" prefWidth="87.800048828125" />
+     </columnConstraints>
+     <rowConstraints>
+         <RowConstraints maxHeight="194.5999740600586" minHeight="10.0" prefHeight="52.400001525878906" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="194.5999740600586" minHeight="10.0" prefHeight="54.59999389648438" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="194.5999740600586" minHeight="10.0" prefHeight="59.40000610351562" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="194.5999740600586" minHeight="10.0" prefHeight="61.80000000000001" vgrow="SOMETIMES" />
+       <RowConstraints maxHeight="302.20001831054685" minHeight="10.0" prefHeight="69.80000000000001" vgrow="SOMETIMES" />
+       <RowConstraints maxHeight="224.20003662109377" minHeight="10.0" prefHeight="75.79999389648441" vgrow="SOMETIMES" />
+       <RowConstraints maxHeight="157.19998779296873" minHeight="10.0" prefHeight="74.39999999999998" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="117.39999999999998" minHeight="10.0" prefHeight="71.19998779296873" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+         <TextField fx:id="textfield" alignment="CENTER_RIGHT" maxWidth="305.0" prefHeight="28.0" prefWidth="298.0" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.rowIndex="1">
+            <font>
+               <Font name="Bodoni MT Black Italic" size="19.0" />
+            </font></TextField>
+         <Button fx:id="btnone" maxHeight="57.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handlebtnone" text="1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+            <font>
+               <Font name="Bodoni MT Bold" size="26.0" />
+            </font>
+            <textFill>
+               <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.9018273949623108" blue="0.9399999976158142" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.8963384628295898" green="0.08190000057220459" blue="0.9100000262260437" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Button>
+         <Button fx:id="btntwo" maxHeight="57.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handlebtntwo" text="2" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+            <font>
+               <Font name="Bodoni MT Bold" size="26.0" />
+            </font>
+            <textFill>
+               <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.9018273949623108" blue="0.9399999976158142" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.8963384628295898" green="0.08190000057220459" blue="0.9100000262260437" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Button>
+         <Button fx:id="btnplus" maxHeight="57.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handlebtnplus" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+            <font>
+               <Font name="Bodoni MT Bold" size="26.0" />
+            </font>
+            <textFill>
+               <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.9018273949623108" blue="0.9399999976158142" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.8963384628295898" green="0.08190000057220459" blue="0.9100000262260437" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Button>
+         <Button fx:id="btnequal" maxHeight="50.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handlebtnequal" text="=" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+            <font>
+               <Font name="Bodoni MT Bold" size="26.0" />
+            </font>
+            <textFill>
+               <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.9018273949623108" blue="0.9399999976158142" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.8963384628295898" green="0.08190000057220459" blue="0.9100000262260437" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Button>
+         <Button fx:id="btn5" maxHeight="57.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handlebtn5" text="5" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+            <font>
+               <Font name="Bodoni MT Bold" size="26.0" />
+            </font>
+            <textFill>
+               <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.9018273949623108" blue="0.9399999976158142" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.8963384628295898" green="0.08190000057220459" blue="0.9100000262260437" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Button>
+         <Button fx:id="btn4" maxHeight="57.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handlebtn4" text="4" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+            <font>
+               <Font name="Bodoni MT Bold" size="26.0" />
+            </font>
+            <textFill>
+               <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.9018273949623108" blue="0.9399999976158142" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.8963384628295898" green="0.08190000057220459" blue="0.9100000262260437" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Button>
+         <Button fx:id="btn8" maxHeight="57.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handlebtn8" text="8" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+            <font>
+               <Font name="Bodoni MT Bold" size="26.0" />
+            </font>
+            <textFill>
+               <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.9018273949623108" blue="0.9399999976158142" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.8963384628295898" green="0.08190000057220459" blue="0.9100000262260437" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Button>
+         <Button fx:id="btn7" maxHeight="57.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handlebtn7" text="7" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+            <font>
+               <Font name="Bodoni MT Bold" size="26.0" />
+            </font>
+            <textFill>
+               <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.9018273949623108" blue="0.9399999976158142" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.8963384628295898" green="0.08190000057220459" blue="0.9100000262260437" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Button>
+         <Button fx:id="btn0" maxWidth="142.0" minWidth="50.0" mnemonicParsing="false" onAction="#handlebtn0" text="0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+            <font>
+               <Font name="Bodoni MT Bold" size="26.0" />
+            </font>
+            <textFill>
+               <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.9018273949623108" blue="0.9399999976158142" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.8963384628295898" green="0.08190000057220459" blue="0.9100000262260437" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Button>
+         <Button fx:id="btn3" maxHeight="57.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handlebtn3" text="3" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+            <font>
+               <Font name="Bodoni MT Bold" size="26.0" />
+            </font>
+            <textFill>
+               <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.9018273949623108" blue="0.9399999976158142" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.8963384628295898" green="0.08190000057220459" blue="0.9100000262260437" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Button>
+         <Button fx:id="btn6" maxHeight="57.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handlebtn6" text="6" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+            <font>
+               <Font name="Bodoni MT Bold" size="26.0" />
+            </font>
+            <textFill>
+               <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.9018273949623108" blue="0.9399999976158142" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.8963384628295898" green="0.08190000057220459" blue="0.9100000262260437" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Button>
+         <Button fx:id="btn9" maxHeight="57.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handlebtn9" text="9" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+            <font>
+               <Font name="Bodoni MT Bold" size="26.0" />
+            </font>
+            <textFill>
+               <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.9018273949623108" blue="0.9399999976158142" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.8963384628295898" green="0.08190000057220459" blue="0.9100000262260437" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Button>
+         <Button fx:id="btntimes" maxHeight="57.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handlebtntimes" text="*" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+            <font>
+               <Font name="Bodoni MT Bold" size="26.0" />
+            </font>
+            <textFill>
+               <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.9018273949623108" blue="0.9399999976158142" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.8963384628295898" green="0.08190000057220459" blue="0.9100000262260437" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Button>
+         <Button fx:id="btnn" maxHeight="57.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handlebtnn" text="+/-" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+            <font>
+               <Font name="Bodoni MT Bold" size="22.0" />
+            </font>
+            <textFill>
+               <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.9018273949623108" blue="0.9399999976158142" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.8963384628295898" green="0.08190000057220459" blue="0.9100000262260437" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Button>
+         <Button fx:id="btnd" maxHeight="57.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handlebtnd" text="/" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+            <font>
+               <Font name="Bodoni MT Bold" size="26.0" />
+            </font>
+            <textFill>
+               <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.9018273949623108" blue="0.9399999976158142" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.8963384628295898" green="0.08190000057220459" blue="0.9100000262260437" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Button>
+         <Button fx:id="btnm" maxHeight="57.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handlebtnm" text="-" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+            <font>
+               <Font name="Bodoni MT Bold" size="26.0" />
+            </font>
+            <textFill>
+               <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.9018273949623108" blue="0.9399999976158142" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.8963384628295898" green="0.08190000057220459" blue="0.9100000262260437" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Button>
+         <Button fx:id="btnclear" maxHeight="50.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handlebtnclear" text="C" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+            <font>
+               <Font name="Bodoni MT Bold" size="26.0" />
+            </font>
+            <textFill>
+               <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.9018273949623108" blue="0.9399999976158142" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.8963384628295898" green="0.08190000057220459" blue="0.9100000262260437" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Button>
+         <Button fx:id="btndot" maxHeight="50.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handlebtndot" text="." GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+            <font>
+               <Font name="Bodoni MT Bold" size="26.0" />
+            </font>
+            <textFill>
+               <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.9018273949623108" blue="0.9399999976158142" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.8963384628295898" green="0.08190000057220459" blue="0.9100000262260437" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Button>
+         <Button fx:id="btnper" maxHeight="57.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handlebtnper" text="\%" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+            <font>
+               <Font name="Bodoni MT Bold" size="26.0" />
+            </font>
+            <textFill>
+               <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.9018273949623108" blue="0.9399999976158142" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.8963384628295898" green="0.08190000057220459" blue="0.9100000262260437" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Button>
+         <Button fx:id="csc" maxHeight="50.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handleCsc" text="csc" textFill="#ab15adf2" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <font>
+               <Font name="Berlin Sans FB" size="26.0" />
+            </font>
+         </Button>
+         <Button fx:id="sin" maxWidth="65.0" mnemonicParsing="false" onAction="#handleSin" text="sin" textFill="#ab15adf2" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+            <font>
+               <Font name="Berlin Sans FB" size="26.0" />
+            </font>
+         </Button>
+         <Button fx:id="sec" mnemonicParsing="false" onAction="#handleSec" text="sec" textFill="#ab15adf2" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <font>
+               <Font name="Berlin Sans FB" size="26.0" />
+            </font>
+         </Button>
+         <Button fx:id="abs" maxHeight="50.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handleAbs" text="|a|" textFill="#ab15adf2" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <font>
+               <Font name="Berlin Sans FB" size="22.0" />
+            </font>
+         </Button>
+         <Button fx:id="sqrt" maxWidth="65.0" mnemonicParsing="false" onAction="#handleSqrt" text="√" textFill="#ab15adf2" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+            <font>
+               <Font name="Britannic Bold" size="26.0" />
+            </font>
+         </Button>
+         <Button fx:id="cancel" maxHeight="50.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handleCancel" text="cancel" textFill="#ab3116" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <font>
+               <Font name="Berlin Sans FB" size="16.0" />
+            </font>
+         </Button>
+         <Button fx:id="tan" maxHeight="50.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handleTan" text="tan" textFill="#ab15adf2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+            <font>
+               <Font name="Berlin Sans FB" size="22.0" />
+            </font>
+         </Button>
+         <Button fx:id="cot" maxHeight="50.0" mnemonicParsing="false" onAction="#handleCot" text="cot" textFill="#ab15adf2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <font>
+               <Font name="Berlin Sans FB" size="26.0" />
+            </font>
+         </Button>
+         <Button fx:id="cos" mnemonicParsing="false" onAction="#handleCos" text="cos" textFill="#ab15adf2" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+            <font>
+               <Font name="Berlin Sans FB" size="26.0" />
+            </font>
+         </Button>
+         <Button fx:id="power" maxHeight="50.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handlePower" text="a^b" textFill="#ab15adf2" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+            <font>
+               <Font name="Berlin Sans FB" size="20.0" />
+            </font>
+         </Button>
+         <Button mnemonicParsing="false" prefHeight="250.0" prefWidth="56.0" textFill="#ab15adf2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.rowSpan="4">
+            <font>
+               <Font name="Berlin Sans FB" size="26.0" />
+            </font>
+         </Button>
+         <Button fx:id="Rbracket" maxHeight="50.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handleRbracket" text=")" textFill="#ab15adf2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <font>
+               <Font name="Berlin Sans FB" size="26.0" />
+            </font>
+         </Button>
+         <Button fx:id="Lbracket" maxHeight="50.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handleLbracket" prefHeight="50.0" prefWidth="38.0" text="(" textFill="#ab15adf2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+            <font>
+               <Font name="Berlin Sans FB" size="26.0" />
+            </font>
+         </Button>
+         <Label fx:id="label1" prefHeight="33.0" prefWidth="298.0" style="-fx-background-color: #f984f8;" textFill="#e5eaec38" GridPane.columnIndex="1" GridPane.columnSpan="5">
+            <font>
+               <Font name="Bodoni MT" size="19.0" />
+            </font>
+         </Label>
+      </children>
+      <padding>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </padding>
+   </GridPane>
+</VBox>
