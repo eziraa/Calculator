@@ -1,4 +1,4 @@
-<img src= "">
+<img src= "blob/main/src/main/java/com/example/samplecalculator/img.jpg">
 
 # Calculator Project
 
